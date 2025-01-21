@@ -1,6 +1,7 @@
 const searchEl = document.getElementById('inp-field');
 const searchBtn = document.getElementById('search-btn');
 const heroRight = document.getElementById('hero-section-right');
+const clearBtn = document.getElementById('clear-btn');
 
 const showRecommendation = (data) => {
     const str = searchEl.value.toLowerCase();
@@ -21,8 +22,14 @@ const getData = async () => {
     showRecommendation(data);
    
 };
+function addListeners() {
+    searchBtn.addEventListener('click', getData);
+    clearBtn.addEventListener('click', () => {
+        heroRight.innerHTML = '';
+        searchEl.value = ''
+    })
+}
 
-searchBtn.addEventListener('click', getData);
 
 function findKey(str,data) {
     let key;
@@ -61,3 +68,4 @@ function findCountry(str,data) {
     const cities = country.cities;
     return cities;
 }
+addListeners();
