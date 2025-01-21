@@ -169,8 +169,20 @@
 .card{
     width : 20%;
     height : 150px;
-    background-color : rgba(0,0,0,.3)
+    background-color : rgba(0,0,0,.3);
+    display: flex;
+    padding : 10px;
+    box-sizing: border-box;
 }
+.member-logo{
+    flex : 20%;
+}
+.member-details{
+    flex : 80%;
+    padding-top : 20px;
+    padding-left : 15px;
+}
+
 .member-cards-conatiner{
     width : 100%;
     
@@ -188,6 +200,26 @@
     color : white;
     font-weight : bold;
     background-color: transparent;
+}
+.profile-img{
+    width : 100%;
+}
+.name{
+    color : white;
+}
+.bio{
+    color : gray;
+}
+.designation{
+    display: flex;
+    justify-content: center;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    margin-top : 5px;
+    color : white;
+    border : 1px solid gray;
+    border-radius : 5px;
+    background-color: blue;
 }
 
 
