@@ -5,11 +5,14 @@ const heroRight = document.getElementById('hero-section-right');
 const showRecommendation = (data) => {
     const str = searchEl.value.toLowerCase();
     let place = findKey(str,data);
+    if(!place) {
+        place = findCountry(str,data);
+    }
+    if(place) {
+        updatePage(place);
+    }
     
-    updatePage(place);
-    console.log(data);
-    console.log(str);
-    console.log(place);
+
 }
 
 const getData = async () => {
@@ -40,7 +43,7 @@ function updatePage(data) {
     let content;
     data.forEach((elem) => {
         content = `<div id="recommendation-card" class="recommendation-card">
-        <img class="recommendation-img" src="${elem.imageUrl}"/>
+        <img class="recommendation-img" src="${elem.imageUrl}" loading="lazy"/>
         <div id="recommendation-details" class="recommendation-details">
             <h2 id="recommendation-heading" class="recommendation-heading">${elem.name}</h2>
             <p id="recommendation-description" class="recommendation-description">${elem.description}</p>
@@ -52,3 +55,9 @@ function updatePage(data) {
 }
 
 
+function findCountry(str,data) {
+    console.log(data);
+    const country = data.countries.find(elem => elem.name.toLowerCase() === str.toLowerCase());
+    const cities = country.cities;
+    return cities;
+}
