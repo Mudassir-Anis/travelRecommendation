@@ -1,0 +1,192 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+.header{
+    background-color: black;
+    height : 60px;
+    opacity : .8;
+}
+.header-div{
+    width : 45vw;
+    display : flex;
+    justify-content: space-between;
+    height : 60px;
+    background-color: black;
+    padding-left : 10px;
+    padding-right : 10px;
+}
+.search-bar{
+    display : flex;
+    align-items: center;
+    align-items: center;
+}
+.nav-bar{
+    display : flex;
+    align-items: center;
+    column-gap : 25px;
+}
+
+.name-logo-container{
+    display : flex;
+    align-items: center;
+    column-gap : 10px;
+}
+.cmp-name{
+    font-style: italic;
+    font-size : 20px;
+    font-weight: bold;
+    color : white;
+    color : white;
+}
+.cmp-logo{
+    height : 30px;
+}
+.nav-link{
+    text-decoration: none;
+    color : white;
+    font-size: 15px;
+}
+
+.search-icons{
+    height : 40px;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    background-color: white;    
+    padding-right : 20px;
+    padding-left : 10px;   
+}
+.btn-container{
+    display: flex;
+    column-gap: 10px;
+}
+.search-btn,.clear-btn{
+    font-size : 12px;
+    padding : 4px 10px;
+    border-radius: 5px;
+    border : none;
+    background-color : gray;
+    color : white;
+}
+.inp-field{
+    outline: none;
+    border : none;
+    height : 40px;
+    width : 20vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
+    font-size : 15px;
+    box-sizing: border-box;
+    padding-right : 15px;
+    padding-left : 15px;
+}
+.search-logo{
+    height : 40px;
+}
+.home{
+    display : flex;
+    height : calc(100vh - 60px);
+    background-image: url("./bcImage.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position : relative;
+    isolation: isolate;
+}
+/* .layer{
+    height : 100%;
+    background-image: linear-gradient(to right,white,black);
+    opacity : .4;
+    
+} */
+.hero-section{
+    display : flex;
+   
+}
+.home::after{
+    content : '';
+    position : absolute;
+    inset : 0;
+    background-image: linear-gradient(to top,black,white);
+    opacity : .7;
+    z-index: -1;
+   
+}
+.description{
+    color : white;
+    width : 100%;
+    background-color: rgba(0,0,0,.2);
+    line-height: 120%;
+    padding : 15px;
+    box-sizing: border-box;
+}
+.side-bar-container{
+    width : 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top : 40px;
+    row-gap : 80px;
+   
+}
+.hero-section{
+    width : 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 40px;
+    height : 100%;
+    box-sizing : border-box;
+    row-gap : 40px;
+}
+.title{
+    width : 300px;
+    font-size : 50px;
+    color : white;
+}
+.book-btn{
+    background-color: gray;
+    color : white;
+    padding : 10px 15px;
+    border : none;
+    border-radius : 10px;
+}
+.bar{
+    height : 30%;
+    width : 3px;
+    background-color: white;
+}
+.fa-brands{
+    color : white;
+    font-size : 25px;
+}
+.social-icons{
+    display : flex;
+    flex-direction: column;
+    row-gap : 30px;
+}
+.card{
+    width : 20%;
+    height : 150px;
+    background-color : rgba(0,0,0,.3)
+}
+.member-cards-conatiner{
+    width : 100%;
+    
+    height : 200px;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left : 80px;
+    box-sizing : border-box;
+}
+.heading{
+    width : 10%;
+    margin : 50px;
+    font-size : 40px;
+    color : white;
+    font-weight : bold;
+    background-color: transparent;
+}
+

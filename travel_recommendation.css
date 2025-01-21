@@ -1,0 +1,158 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+.header{
+    display : flex;
+    justify-content: space-between;
+    height : 60px;
+    background-color: black;
+    opacity : .8;
+    padding-left : 10px;
+    padding-right : 10px;
+}
+.search-bar{
+    display : flex;
+    align-items: center;
+    align-items: center;
+}
+.nav-bar{
+    display : flex;
+    align-items: center;
+    column-gap : 25px;
+}
+
+.name-logo-container{
+    display : flex;
+    align-items: center;
+    column-gap : 10px;
+}
+.cmp-name{
+    font-style: italic;
+    font-size : 20px;
+    font-weight: bold;
+    color : white;
+    color : white;
+}
+.cmp-logo{
+    height : 30px;
+}
+.nav-link{
+    text-decoration: none;
+    color : white;
+    font-size: 15px;
+}
+
+.search-icons{
+    height : 40px;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    background-color: white;    
+    padding-right : 20px;
+    padding-left : 10px;   
+}
+.btn-container{
+    display: flex;
+    column-gap: 10px;
+}
+.search-btn,.clear-btn{
+    font-size : 12px;
+    padding : 4px 10px;
+    border-radius: 5px;
+    border : none;
+    background-color : gray;
+    color : white;
+}
+.inp-field{
+    outline: none;
+    border : none;
+    height : 40px;
+    width : 20vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
+    font-size : 15px;
+    box-sizing: border-box;
+    padding-right : 15px;
+    padding-left : 15px;
+}
+.search-logo{
+    height : 40px;
+}
+.home{
+    display : flex;
+    height : calc(100vh - 60px);
+    background-image: url("./bcImage.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position : relative;
+    isolation: isolate;
+}
+/* .layer{
+    height : 100%;
+    background-image: linear-gradient(to right,white,black);
+    opacity : .4;
+    
+} */
+.hero-section{
+    display : flex;
+   
+}
+.home::after{
+    content : '';
+    position : absolute;
+    inset : 0;
+    background-image: linear-gradient(to top,black,white);
+    opacity : .7;
+    z-index: -1;
+   
+}
+.description{
+    color : white;
+    width : 200px;
+}
+.side-bar-container{
+    width : 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top : 40px;
+    row-gap : 80px;
+   
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 40px;
+    height : 100%;
+    box-sizing : border-box;
+    row-gap : 30px;
+}
+.title{
+    width : 300px;
+    font-size : 50px;
+    color : white;
+}
+.book-btn{
+    background-color: gray;
+    color : white;
+    padding : 10px 15px;
+    border : none;
+    border-radius : 10px;
+}
+.bar{
+    height : 30%;
+    width : 3px;
+    background-color: white;
+}
+.fa-brands{
+    color : white;
+    font-size : 25px;
+}
+.social-icons{
+    display : flex;
+    flex-direction: column;
+    row-gap : 30px;
+}
