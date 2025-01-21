@@ -97,7 +97,7 @@
 } */
 .hero-section{
     display : flex;
-   
+    width : 100%;
 }
 .home::after{
     content : '';
@@ -121,7 +121,10 @@
     row-gap : 80px;
    
 }
-.hero-section{
+
+.hero-section-left{
+    border : 2px solid black;
+    flex : 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -129,6 +132,10 @@
     height : 100%;
     box-sizing : border-box;
     row-gap : 30px;
+}
+.hero-section-right{
+    flex : 50%;
+    border: 2px solid white;
 }
 .title{
     width : 300px;
@@ -155,4 +162,7 @@
     display : flex;
     flex-direction: column;
     row-gap : 30px;
+}
+.recommendation-img{
+    width : 60%;
 }
